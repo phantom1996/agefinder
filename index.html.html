@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Age Finder.</title>
+</head>
+<body>
+	<h1>THIS PROGRAME IS USED TO FIND YOUR AGE IN ALL MANNER</h1>
+	<script type="text/javascript">
+		var x=new Date();
+var y=x.getFullYear();
+var k=((y-z-1)*365*24*3600-a*30*24*3600-b*24*3600);
+var p=x.getMonth();
+var r=x.getDay();
+var t=x.getHours();
+var v=x.getMinutes();
+var h=x.getSeconds();
+var z=prompt("enter your year of birth");
+if (z>1920||z<=2017) {
+var a=prompt("enter your month of birth");
+var b=prompt("enter your date of birth");
+if (a>(p+1)) {
+document.write("Age in years completed i:"+(y-z-1)+"<br />");
+document.write("Age in months completed is:"+((y-z-1)*12+p)+"<br />");
+document.write("Age in weeks completed is:"+((y-z-1)*12+p*30)/7+"<br />");
+document.write("Age in days completedis:"+(((y-z-1)*12)+p)*30+"<br />");
+document.write("Age in hours completed is:"+(((y-z-1)*12+p)*30)*24+"<br />");
+document.write("Age in minutes completed is:"+((((y-z-1)*12+p)*30)*24)*60+"<br />");
+document.write("Age in second completed is:"+(k+p*30*24*3600+r*24*3600+t*3600+v*60+h)+"<br />");
+}
+else
+{
+	document.write("Age in years completed i:"+(y-z)+"<br />");
+document.write("Age in months completed is:"+((y-z)*12+(p-a))+"<br />");
+document.write("Age in weeks completed is:"+((y-z)*12+(p-a)*30)/7+"<br />");
+document.write("Age in days completedis:"+(((y-z)*12)+(p-a))*30+"<br />");
+document.write("Age in hours completed is:"+(((y-z)*12+(p-a))*30)*24+"<br />");
+document.write("Age in minutes completed is:"+((((y-z)*12+(p-a))*30)*24)*60+"<br />");
+document.write("Age in second completed is:"+(((y-z)*365*24*3600-a*30*24*3600-b*24*3600)+(p-a)*30*24*3600+r*24*3600+t*3600+v*60+h)+"<br />");
+}
+}
+else if (z==0) {
+	alert("enter a valid age")
+}
+else if (z>2017) {
+	alert("let complete the current year 2017")
+}
+else
+{
+	alert("What you will do with your age you are dead now")
+}
+</script>
+</body>
+</html>
